@@ -1,0 +1,23 @@
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .figure {
+    margin: var(--spacing-lg) 0;
+  }
+  
+  .heroWrapper {
+    height: 50vh;
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroWrapper {
+    height: 40vh;
+  }
+  
+  .caption {
+    font-size: 0.8rem;
+  }
+}

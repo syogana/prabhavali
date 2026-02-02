@@ -1,0 +1,124 @@
+/* Headings */
+.h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: var(--line-height-tight);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--spacing-md);
+  padding-top: 32px;
+  padding-left: 128px;
+}
+
+.h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: var(--line-height-tight);
+  letter-spacing: -0.01em;
+  margin-bottom: var(--spacing-md);
+  padding-top: 32px;
+  padding-left: 128px;
+}
+
+.h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: var(--line-height-normal);
+  margin-bottom: var(--spacing-sm);
+  padding-top: 32px;
+  padding-left: 128px;
+}
+
+.h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: var(--line-height-normal);
+  margin-bottom: var(--spacing-sm);
+  padding-top: 32px;
+  padding-left: 128px;
+}
+
+/* Paragraphs */
+.paragraph {
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
+  padding: 0 128px;
+}
+
+.paragraph.base {
+  font-size: var(--font-size-base);
+}
+
+.paragraph.large {
+  font-size: var(--font-size-lg);
+}
+
+.paragraph.small {
+  font-size: var(--font-size-sm);
+}
+
+/* Lead text */
+.lead {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+  font-weight: 300;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-text-secondary);
+}
+
+/* Caption */
+.caption {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-secondary);
+  margin-top: var(--spacing-xs);
+}
+
+/* Tablet and below */
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 2rem;
+    padding-left: 16px;
+  }
+  
+  .h2 {
+    font-size: 1.75rem;
+    padding-left: 16px;
+  }
+  
+  .h3 {
+    font-size: 1.25rem;
+    padding-left: 16px;
+  }
+  
+  .h4 {
+    font-size: 1.125rem;
+    padding-left: 16px;
+  }
+
+  .paragraph {
+    padding: 0 16px
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .h1 {
+    font-size: 1.75rem;
+    padding-left: 16px;
+  }
+  
+  .h2 {
+    font-size: 1.5rem;
+    padding-left: 16px;
+  }
+  
+  .h3 {
+    font-size: 1.125rem;
+    padding-left: 16px;
+  }
+
+  .paragraph {
+    padding: 0 16px
+  }
+}

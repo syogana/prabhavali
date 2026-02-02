@@ -1,0 +1,25 @@
+/* Header wrapper */
+.header {
+  height: var(--header-height);
+  top: 0;
+  z-index: 50;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Inner container for logo alignment */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: right; /* Logo centered on mobile */
+  align-items: center;
+}
+
+/* Logo image could be styled if needed */
+.container img {
+  display: block;
+  height: auto;
+}

@@ -1,0 +1,10 @@
+.heroWrapper {
+  margin-top: var(--header-height);
+  height: calc(100vh - var(--header-height));
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  max-height: 800px;
+  overflow: hidden;
+  margin: 0;
+}
