@@ -1,6 +1,6 @@
 module.exports = {
  output: 'export',
- basePath: 'prabhavali'
+ basePath: '/prabhavali',
  images: {
    unoptimized: true,
  },
