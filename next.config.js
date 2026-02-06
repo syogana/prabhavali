@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
   basePath: '/prabhavali',
+  assetPrefix: '/prabhavali',
   images: {
     unoptimized: true,
   },
