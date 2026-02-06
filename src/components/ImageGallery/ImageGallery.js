@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import styles from "./ImageGallery.module.css";
+import { getImagePath } from "@/app/utils/paths";
 
 export default function ImageGallery({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,7 +30,7 @@ export default function ImageGallery({ images }) {
     <div className={styles.gallery}>
       <div className={styles.imageContainer}>
         <Image
-          src={currentImage.src}
+          src={getImagePath(currentImage.src)}
           alt={currentImage.alt || `Image ${currentIndex + 1}`}
           fill
           className={styles.image}

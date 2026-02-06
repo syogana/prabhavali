@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Header.module.css";
+import { getImagePath } from "@/app/utils/paths";
 
 export default function Header() {
   return (
@@ -8,7 +9,7 @@ export default function Header() {
       <div className={styles.container}>
         <Link href="/">
           <Image
-            src="/images/logo.jpeg"
+            src={getImagePath("/images/logo.jpeg")}
             alt="Prabhavali Logo"
             width={220}
             height={60}
