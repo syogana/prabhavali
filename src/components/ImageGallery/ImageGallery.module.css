@@ -101,7 +101,7 @@
 
 @media (max-width: 480px) {
   .imageContainer {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 9 / 16;
   }
 
   .arrow {

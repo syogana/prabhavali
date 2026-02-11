@@ -1,6 +1,7 @@
 import { Heading2 } from "@/components/Typography/Typography";
 import { Paragraph } from "@/components/Typography/Typography";
 import ImageGallery from "@/components/ImageGallery/ImageGallery";
+import Stack from "@/components/Stack/Stack";
 
 export default function Repertory() {
   const repertoryImages = [
@@ -20,7 +21,7 @@ export default function Repertory() {
 
   return (
     <section>
-      <div>
+      <Stack size="md">
         <Heading2>PRABHĀVALĪ REPERTORY</Heading2>
         <Paragraph size="base">
           The Prabhāvalī Repertory, founded and artistically directed by K.H.
@@ -52,7 +53,7 @@ export default function Repertory() {
         </Paragraph>
 
         <ImageGallery images={repertoryImages} />
-      </div>
+      </Stack>
     </section>
   );
 }

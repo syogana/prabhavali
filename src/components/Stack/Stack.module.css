@@ -1,0 +1,44 @@
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Spacing sizes using gap */
+.xs {
+  gap: var(--spacing-xs, 0.5rem);
+}
+
+.sm {
+  gap: var(--spacing-sm, 1rem);
+}
+
+.md {
+  gap: var(--spacing-md, 1.5rem);
+}
+
+.lg {
+  gap: var(--spacing-lg, 2rem);
+}
+
+.xl {
+  gap: var(--spacing-xl, 3rem);
+}
+
+.xxl {
+  gap: var(--spacing-xxl, 4rem);
+}
+
+/* Responsive spacing - reduce on mobile */
+@media (max-width: 768px) {
+  .lg {
+    gap: var(--spacing-md, 1.5rem);
+  }
+  
+  .xl {
+    gap: var(--spacing-lg, 2rem);
+  }
+  
+  .xxl {
+    gap: var(--spacing-xl, 3rem);
+  }
+}

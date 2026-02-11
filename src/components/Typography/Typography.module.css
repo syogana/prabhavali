@@ -2,9 +2,9 @@
 .h1 {
   font-size: 2.5rem;
   font-weight: 300;
-  line-height: var(--line-height-tight);
+  /* line-height: var(--line-height-tight); */
   letter-spacing: -0.02em;
-  margin-bottom: var(--spacing-md);
+  /* margin-bottom: var(--spacing-md); */
   padding-top: 32px;
   padding-left: 128px;
 }
@@ -12,9 +12,9 @@
 .h2 {
   font-size: 2rem;
   font-weight: 300;
-  line-height: var(--line-height-tight);
+  /* line-height: var(--line-height-tight); */
   letter-spacing: -0.01em;
-  margin-bottom: var(--spacing-md);
+  /* margin-bottom: var(--spacing-md); */
   padding-top: 32px;
   padding-left: 128px;
 }
@@ -22,25 +22,23 @@
 .h3 {
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: var(--line-height-normal);
-  margin-bottom: var(--spacing-sm);
-  padding-top: 32px;
+  /* line-height: var(--line-height-normal); */
+  /* margin-bottom: var(--spacing-sm); */
   padding-left: 128px;
 }
 
 .h4 {
   font-size: 1.25rem;
   font-weight: 500;
-  line-height: var(--line-height-normal);
-  margin-bottom: var(--spacing-sm);
-  padding-top: 32px;
+  /* line-height: var(--line-height-normal); */
+  /* margin-bottom: var(--spacing-sm); */
   padding-left: 128px;
 }
 
 /* Paragraphs */
 .paragraph {
   line-height: var(--line-height-relaxed);
-  margin-bottom: var(--spacing-md);
+  /* margin-bottom: var(--spacing-md); */
   color: var(--color-text-primary);
   padding: 0 128px;
 }
@@ -54,6 +52,32 @@
 }
 
 .paragraph.small {
+  font-size: var(--font-size-sm);
+}
+
+/* Unordered Lists */
+.ul {
+  line-height: var(--line-height-relaxed);
+  /* margin-bottom: var(--spacing-md); */
+  color: var(--color-text-primary);
+  padding-left: 152px;
+  list-style-type: disc;
+}
+
+.ul li {
+  /* margin-bottom: var(--spacing-xs); */
+  padding-left: var(--spacing-xs);
+}
+
+.ul.base {
+  font-size: var(--font-size-base);
+}
+
+.ul.large {
+  font-size: var(--font-size-lg);
+}
+
+.ul.small {
   font-size: var(--font-size-sm);
 }
 
@@ -99,6 +123,10 @@
   .paragraph {
     padding: 0 16px
   }
+
+  .ul {
+    padding-left: 40px;
+  }
 }
 
 /* Mobile */
@@ -120,5 +148,9 @@
 
   .paragraph {
     padding: 0 16px
+  }
+
+  .ul {
+    padding-left: 40px;
   }
 }
